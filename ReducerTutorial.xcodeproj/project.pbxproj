@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		20D30C5324A2315400D1C66F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D30C5224A2315400D1C66F /* AppDelegate.swift */; };
+		20D30C5524A2315400D1C66F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D30C5424A2315400D1C66F /* ContentView.swift */; };
+		20D30C5724A2315700D1C66F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D30C5624A2315700D1C66F /* Assets.xcassets */; };
+		20D30C5A24A2315700D1C66F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20D30C5924A2315700D1C66F /* Preview Assets.xcassets */; };
+		20D30C5D24A2315700D1C66F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20D30C5B24A2315700D1C66F /* Main.storyboard */; };
+		20D30C6924A2315800D1C66F /* ReducerTutorialTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D30C6824A2315800D1C66F /* ReducerTutorialTests.swift */; };
+		20D30C7424A2315800D1C66F /* ReducerTutorialUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D30C7324A2315800D1C66F /* ReducerTutorialUITests.swift */; };
+		20D30C8324A2320200D1C66F /* SimpleReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D30C8224A2320200D1C66F /* SimpleReducer.swift */; };
+		20D30C8524A2DDE600D1C66F /* ReducerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D30C8424A2DDE600D1C66F /* ReducerImpl.swift */; };
+		20D30C8724A2FD8600D1C66F /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D30C8624A2FD8600D1C66F /* ContentViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		20D30C6524A2315800D1C66F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20D30C4724A2315400D1C66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20D30C4E24A2315400D1C66F;
+			remoteInfo = ReducerTutorial;
+		};
+		20D30C7024A2315800D1C66F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 20D30C4724A2315400D1C66F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 20D30C4E24A2315400D1C66F;
+			remoteInfo = ReducerTutorial;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20D30C4F24A2315400D1C66F /* ReducerTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReducerTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D30C5224A2315400D1C66F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20D30C5424A2315400D1C66F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		20D30C5624A2315700D1C66F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20D30C5924A2315700D1C66F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		20D30C5C24A2315700D1C66F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20D30C5E24A2315700D1C66F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D30C5F24A2315700D1C66F /* ReducerTutorial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ReducerTutorial.entitlements; sourceTree = "<group>"; };
+		20D30C6424A2315800D1C66F /* ReducerTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReducerTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D30C6824A2315800D1C66F /* ReducerTutorialTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerTutorialTests.swift; sourceTree = "<group>"; };
+		20D30C6A24A2315800D1C66F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D30C6F24A2315800D1C66F /* ReducerTutorialUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReducerTutorialUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		20D30C7324A2315800D1C66F /* ReducerTutorialUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReducerTutorialUITests.swift; sourceTree = "<group>"; };
+		20D30C7524A2315800D1C66F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20D30C8224A2320200D1C66F /* SimpleReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleReducer.swift; sourceTree = "<group>"; };
+		20D30C8424A2DDE600D1C66F /* ReducerImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReducerImpl.swift; path = Redux/ReducerImpl.swift; sourceTree = "<group>"; };
+		20D30C8624A2FD8600D1C66F /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20D30C4C24A2315400D1C66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D30C6124A2315800D1C66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D30C6C24A2315800D1C66F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		20D30C4624A2315400D1C66F = {
+			isa = PBXGroup;
+			children = (
+				20D30C5124A2315400D1C66F /* ReducerTutorial */,
+				20D30C6724A2315800D1C66F /* ReducerTutorialTests */,
+				20D30C7224A2315800D1C66F /* ReducerTutorialUITests */,
+				20D30C5024A2315400D1C66F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20D30C5024A2315400D1C66F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20D30C4F24A2315400D1C66F /* ReducerTutorial.app */,
+				20D30C6424A2315800D1C66F /* ReducerTutorialTests.xctest */,
+				20D30C6F24A2315800D1C66F /* ReducerTutorialUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20D30C5124A2315400D1C66F /* ReducerTutorial */ = {
+			isa = PBXGroup;
+			children = (
+				20D30C8424A2DDE600D1C66F /* ReducerImpl.swift */,
+				20D30C8124A231CD00D1C66F /* Redux */,
+				20D30C5224A2315400D1C66F /* AppDelegate.swift */,
+				20D30C5424A2315400D1C66F /* ContentView.swift */,
+				20D30C5624A2315700D1C66F /* Assets.xcassets */,
+				20D30C5B24A2315700D1C66F /* Main.storyboard */,
+				20D30C5E24A2315700D1C66F /* Info.plist */,
+				20D30C5F24A2315700D1C66F /* ReducerTutorial.entitlements */,
+				20D30C5824A2315700D1C66F /* Preview Content */,
+				20D30C8624A2FD8600D1C66F /* ContentViewController.swift */,
+			);
+			path = ReducerTutorial;
+			sourceTree = "<group>";
+		};
+		20D30C5824A2315700D1C66F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				20D30C5924A2315700D1C66F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		20D30C6724A2315800D1C66F /* ReducerTutorialTests */ = {
+			isa = PBXGroup;
+			children = (
+				20D30C6824A2315800D1C66F /* ReducerTutorialTests.swift */,
+				20D30C6A24A2315800D1C66F /* Info.plist */,
+			);
+			path = ReducerTutorialTests;
+			sourceTree = "<group>";
+		};
+		20D30C7224A2315800D1C66F /* ReducerTutorialUITests */ = {
+			isa = PBXGroup;
+			children = (
+				20D30C7324A2315800D1C66F /* ReducerTutorialUITests.swift */,
+				20D30C7524A2315800D1C66F /* Info.plist */,
+			);
+			path = ReducerTutorialUITests;
+			sourceTree = "<group>";
+		};
+		20D30C8124A231CD00D1C66F /* Redux */ = {
+			isa = PBXGroup;
+			children = (
+				20D30C8224A2320200D1C66F /* SimpleReducer.swift */,
+			);
+			path = Redux;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20D30C4E24A2315400D1C66F /* ReducerTutorial */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D30C7824A2315800D1C66F /* Build configuration list for PBXNativeTarget "ReducerTutorial" */;
+			buildPhases = (
+				20D30C4B24A2315400D1C66F /* Sources */,
+				20D30C4C24A2315400D1C66F /* Frameworks */,
+				20D30C4D24A2315400D1C66F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReducerTutorial;
+			productName = ReducerTutorial;
+			productReference = 20D30C4F24A2315400D1C66F /* ReducerTutorial.app */;
+			productType = "com.apple.product-type.application";
+		};
+		20D30C6324A2315800D1C66F /* ReducerTutorialTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D30C7B24A2315800D1C66F /* Build configuration list for PBXNativeTarget "ReducerTutorialTests" */;
+			buildPhases = (
+				20D30C6024A2315800D1C66F /* Sources */,
+				20D30C6124A2315800D1C66F /* Frameworks */,
+				20D30C6224A2315800D1C66F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20D30C6624A2315800D1C66F /* PBXTargetDependency */,
+			);
+			name = ReducerTutorialTests;
+			productName = ReducerTutorialTests;
+			productReference = 20D30C6424A2315800D1C66F /* ReducerTutorialTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		20D30C6E24A2315800D1C66F /* ReducerTutorialUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20D30C7E24A2315800D1C66F /* Build configuration list for PBXNativeTarget "ReducerTutorialUITests" */;
+			buildPhases = (
+				20D30C6B24A2315800D1C66F /* Sources */,
+				20D30C6C24A2315800D1C66F /* Frameworks */,
+				20D30C6D24A2315800D1C66F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				20D30C7124A2315800D1C66F /* PBXTargetDependency */,
+			);
+			name = ReducerTutorialUITests;
+			productName = ReducerTutorialUITests;
+			productReference = 20D30C6F24A2315800D1C66F /* ReducerTutorialUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20D30C4724A2315400D1C66F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Tarek Ghazi";
+				TargetAttributes = {
+					20D30C4E24A2315400D1C66F = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					20D30C6324A2315800D1C66F = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 20D30C4E24A2315400D1C66F;
+					};
+					20D30C6E24A2315800D1C66F = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 20D30C4E24A2315400D1C66F;
+					};
+				};
+			};
+			buildConfigurationList = 20D30C4A24A2315400D1C66F /* Build configuration list for PBXProject "ReducerTutorial" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 20D30C4624A2315400D1C66F;
+			productRefGroup = 20D30C5024A2315400D1C66F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20D30C4E24A2315400D1C66F /* ReducerTutorial */,
+				20D30C6324A2315800D1C66F /* ReducerTutorialTests */,
+				20D30C6E24A2315800D1C66F /* ReducerTutorialUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20D30C4D24A2315400D1C66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D30C5D24A2315700D1C66F /* Main.storyboard in Resources */,
+				20D30C5A24A2315700D1C66F /* Preview Assets.xcassets in Resources */,
+				20D30C5724A2315700D1C66F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D30C6224A2315800D1C66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D30C6D24A2315800D1C66F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20D30C4B24A2315400D1C66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D30C8724A2FD8600D1C66F /* ContentViewController.swift in Sources */,
+				20D30C8524A2DDE600D1C66F /* ReducerImpl.swift in Sources */,
+				20D30C5524A2315400D1C66F /* ContentView.swift in Sources */,
+				20D30C8324A2320200D1C66F /* SimpleReducer.swift in Sources */,
+				20D30C5324A2315400D1C66F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D30C6024A2315800D1C66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D30C6924A2315800D1C66F /* ReducerTutorialTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20D30C6B24A2315800D1C66F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D30C7424A2315800D1C66F /* ReducerTutorialUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		20D30C6624A2315800D1C66F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20D30C4E24A2315400D1C66F /* ReducerTutorial */;
+			targetProxy = 20D30C6524A2315800D1C66F /* PBXContainerItemProxy */;
+		};
+		20D30C7124A2315800D1C66F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 20D30C4E24A2315400D1C66F /* ReducerTutorial */;
+			targetProxy = 20D30C7024A2315800D1C66F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		20D30C5B24A2315700D1C66F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				20D30C5C24A2315700D1C66F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		20D30C7624A2315800D1C66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		20D30C7724A2315800D1C66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		20D30C7924A2315800D1C66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReducerTutorial/ReducerTutorial.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ReducerTutorial/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ReducerTutorial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileus.ReducerTutorial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		20D30C7A24A2315800D1C66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReducerTutorial/ReducerTutorial.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"ReducerTutorial/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = ReducerTutorial/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileus.ReducerTutorial;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		20D30C7C24A2315800D1C66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ReducerTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileus.ReducerTutorialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReducerTutorial.app/Contents/MacOS/ReducerTutorial";
+			};
+			name = Debug;
+		};
+		20D30C7D24A2315800D1C66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ReducerTutorialTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileus.ReducerTutorialTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReducerTutorial.app/Contents/MacOS/ReducerTutorial";
+			};
+			name = Release;
+		};
+		20D30C7F24A2315800D1C66F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ReducerTutorialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileus.ReducerTutorialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ReducerTutorial;
+			};
+			name = Debug;
+		};
+		20D30C8024A2315800D1C66F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ReducerTutorialUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mobileus.ReducerTutorialUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = ReducerTutorial;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20D30C4A24A2315400D1C66F /* Build configuration list for PBXProject "ReducerTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D30C7624A2315800D1C66F /* Debug */,
+				20D30C7724A2315800D1C66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D30C7824A2315800D1C66F /* Build configuration list for PBXNativeTarget "ReducerTutorial" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D30C7924A2315800D1C66F /* Debug */,
+				20D30C7A24A2315800D1C66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D30C7B24A2315800D1C66F /* Build configuration list for PBXNativeTarget "ReducerTutorialTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D30C7C24A2315800D1C66F /* Debug */,
+				20D30C7D24A2315800D1C66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20D30C7E24A2315800D1C66F /* Build configuration list for PBXNativeTarget "ReducerTutorialUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20D30C7F24A2315800D1C66F /* Debug */,
+				20D30C8024A2315800D1C66F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20D30C4724A2315400D1C66F /* Project object */;
+}
